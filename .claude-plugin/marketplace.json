@@ -1,0 +1,11 @@
+{
+  "name": "inspire-skills",
+  "description": "a collection of productivity skills for claude code by inspire",
+  "plugins": [
+    {
+      "name": "agent-orchestrator",
+      "source": "./plugins/agent-orchestrator",
+      "description": "converts any task into a production-ready multi-agent orchestration prompt"
+    }
+  ]
+}
