@@ -2,10 +2,5 @@
   "name": "agent-orchestrator",
   "version": "1.0.0",
   "description": "converts any task into a production-ready multi-agent orchestration prompt for claude code",
-  "skills": [
-    {
-      "name": "agent-orchestrator",
-      "source": "./skills/agent-orchestrator/SKILL.md"
-    }
-  ]
+  "skills": ["./skills/agent-orchestrator"]
 }
