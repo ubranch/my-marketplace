@@ -1,11 +1,19 @@
 {
   "name": "inspire-skills",
-  "description": "a collection of productivity skills for claude code by inspire",
+  "owner": {
+    "name": "ubranch",
+    "email": "unknown.branch@gmail.com"
+  },
+  "metadata": {
+    "description": "a collection of productivity skills for claude code by inspire",
+    "version": "1.0.0"
+  },
   "plugins": [
     {
       "name": "agent-orchestrator",
       "source": "./plugins/agent-orchestrator",
-      "description": "converts any task into a production-ready multi-agent orchestration prompt"
+      "description": "converts any task into a production-ready multi-agent orchestration prompt",
+      "version": "1.0.0"
     }
   ]
 }
