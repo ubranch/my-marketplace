@@ -14,6 +14,12 @@
       "source": "./plugins/agent-orchestrator",
       "description": "converts any task into a production-ready multi-agent orchestration prompt",
       "version": "1.0.0"
+    },
+    {
+      "name": "payme-integration",
+      "source": "./plugins/payme-integration",
+      "description": "expert-level payme payment system integration skill for uzbekistan's payme business platform",
+      "version": "1.0.0"
     }
   ]
 }

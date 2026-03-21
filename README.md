@@ -7,6 +7,7 @@ a collection of productivity skills for [claude code](https://docs.anthropic.com
 | skill | description |
 |-------|-------------|
 | **agent-orchestrator** | converts any task into a production-ready multi-agent orchestration prompt |
+| **payme-integration** | expert-level payme payment system integration for uzbekistan's payme business platform |
 
 ## installation
 
@@ -16,17 +17,18 @@ a collection of productivity skills for [claude code](https://docs.anthropic.com
 
 # install a skill
 /plugin install agent-orchestrator@inspire-skills
+/plugin install payme-integration@inspire-skills
 ```
 
-## usage
+## skills
 
-once installed, the `agent-orchestrator` skill activates automatically when you:
+### agent-orchestrator
 
-- ask to parallelize work or orchestrate agents
-- say things like "orchestrate this", "create agents for this", "multi-agent"
-- paste a task that would benefit from being split into parallel work streams
+activates automatically when you ask to parallelize work, orchestrate agents, or split tasks into parallel work streams. generates a copy-paste ready orchestration prompt that spawns specialized agent teams for any domain.
 
-it generates a copy-paste ready orchestration prompt that spawns specialized agent teams for any domain — coding, research, testing, auditing, debugging, and more.
+### payme-integration
+
+activates when you mention payme, paycom, or payment integration for the uzbek market. covers both merchant API (server-to-server) and subscribe API (card tokenization + receipts), sandbox testing, error handling, fiscalization, and production deployment.
 
 ## structure
 
@@ -35,12 +37,21 @@ my-marketplace/
 ├── .claude-plugin/
 │   └── marketplace.json
 ├── plugins/
-│   └── agent-orchestrator/
+│   ├── agent-orchestrator/
+│   │   ├── .claude-plugin/
+│   │   │   └── plugin.json
+│   │   └── skills/
+│   │       └── agent-orchestrator/
+│   │           └── SKILL.md
+│   └── payme-integration/
 │       ├── .claude-plugin/
 │       │   └── plugin.json
 │       └── skills/
-│           └── agent-orchestrator/
-│               └── SKILL.md
+│           └── payme-integration/
+│               ├── SKILL.md
+│               └── references/
+│                   ├── merchant-api.md
+│                   └── subscribe-api.md
 ```
 
 ## license
