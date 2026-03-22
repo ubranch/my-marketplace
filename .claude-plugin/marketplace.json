@@ -20,6 +20,12 @@
       "source": "./plugins/payme-integration",
       "description": "expert-level payme payment system integration skill for uzbekistan's payme business platform",
       "version": "1.0.0"
+    },
+    {
+      "name": "click-integration",
+      "source": "./plugins/click-integration",
+      "description": "expert-level click payment integration skill for uzbekistan's click superapp",
+      "version": "1.0.0"
     }
   ]
 }
